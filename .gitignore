@@ -1,0 +1,10 @@
+.DS_Store
+.fdk/
+coverage/
+.report.json
+.vscode/
+node_modules/
+test_data/
+dist/
+config/iparam_test_data.json
+log/

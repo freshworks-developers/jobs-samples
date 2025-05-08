@@ -1,0 +1,26 @@
+{
+  "integrations": {
+    "freshservice": {
+      "display_name": "Freshservice",
+      "client_id": "YOUR_CLIENT_ID",
+      "client_secret": "YOUR_CLIENT_SECRET",
+      "oauth_iparams": {
+        "freshworks_org_domain": {
+          "display_name": "Freshworks org domain",
+          "description": "Enter your Freshworks organisation name",
+          "type": "text",
+          "required": true
+        }
+      },
+      "authorize_url": "https://<%= oauth_iparams.freshworks_org_domain %>/org/oauth/v2/authorize",
+      "token_url": "https://<%= oauth_iparams.freshworks_org_domain %>/org/oauth/v2/token",
+      "options": {
+        "scope": "freshservice.requesters.create freshservice.requesters.delete freshservice.requesters.edit freshservice.requesters.manage freshservice.requesters.view",
+        "customHeaders": {
+          "Authorization": "Basic BASE64_ENCODED_VALUE_OF(CLIENT_ID:CLIENT_SECRET)"
+        }
+      },
+      "token_type": "account"
+    }
+  }
+}

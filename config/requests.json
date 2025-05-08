@@ -1,0 +1,16 @@
+{
+  "create_fs_contact": {
+    "schema": {
+      "method": "POST",
+      "host": "<%= iparam.freshservice_domain %>",
+      "path": "/api/v2/requesters",
+      "headers": {
+        "Authorization": "Bearer <%= access_token %>",
+        "Content-Type": "application/json"
+      }
+    },
+    "options": {
+      "oauth": "freshservice"
+    }
+  }
+}
