@@ -1,0 +1,15 @@
+{
+  "freshservice_domain": {
+    "display_name": "Freshservice domain",
+    "description": "Please enter your Freshservice domain name",
+    "type": "text",
+    "required": true
+  },
+  "freshservice_api_key": {
+    "display_name": "Freshservice API Key",
+    "description": "API key for Freshservice account. You can find it in your Freshservice profile settings.",
+    "type": "text",
+    "secure": true,
+    "required": true
+  }
+}

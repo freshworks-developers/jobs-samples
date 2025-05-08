@@ -1,0 +1,24 @@
+{
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "requests": {
+        "create_fs_contact": {}
+      },
+      "jobs": {
+        "bulk_contact_sync_job": {}
+      }
+    },
+    "service_ticket": {}
+  },
+  "engines": {
+    "node": "18.18.2",
+    "fdk": "9.4.0"
+  }
+}
